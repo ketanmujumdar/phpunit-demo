@@ -1,6 +1,6 @@
 <?php
 
-include_once('hello-world.php');
+include_once('../hello-world.php');
 
 class helloWorldTest extends PHPUnit_Framework_TestCase {
     
