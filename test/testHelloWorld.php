@@ -11,9 +11,6 @@ class helloWorldTest extends PHPUnit_Framework_TestCase {
     }
 
     public function testAdd(){
-        
-        
-        
         $this->assertEquals($this->helloWorld->add(2,2), 4);
         $this->assertEquals($this->helloWorld->add(2,3), 5);
         $this->assertEquals($this->helloWorld->add(6,3), 9);
@@ -30,7 +27,7 @@ class helloWorldTest extends PHPUnit_Framework_TestCase {
         $this->assertEquals(array(2,3), $this->helloWorld->factorOf(6));
         $this->assertEquals(array(7), $this->helloWorld->factorOf(7));
         $this->assertEquals(array(2,2,2), $this->helloWorld->factorOf(8));
-        $this->assertEquals(array(3,3), $this->helloWorld->factorOf(9));
+        $this->assertEquals(array(3,3), $this->helloWorld->factorOf(8));
         $this->assertEquals(array(3,3,5,5,7,11,13,13), $this->helloWorld->factorOf(3*3*5*5*7*11*13*13));
     }
 }
